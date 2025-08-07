@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>헤더 연습</title>
+  </head>
+  <style>
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: royalblue;
+      padding: 20px 40px;
+      color: white;
+      flex-direction: column;
+    }
+
+    .menu {
+      display: flex;
+      gap: 40px;
+    }
+    .menu a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <h1>MY Header</h1>
+      <div class="menu">
+        <a href="#">소개</a>
+        <a href="#">포트폴리오</a>
+        <a href="#">연락처</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    header,
+    footer {
+      background-color: royalblue;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+      background: #f2f2f2;
+    }
+
+    .box {
+      background: white;
+      border-radius: 8px;
+      width: 200px;
+      height: 150px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    /* 💡 작은 화면(모바일)일 때 */
+    @media (max-width: 600px) {
+      body {
+        background-color: blueviolet;
+      }
+
+      h1 {
+        font-size: 15px;
+        color: darkred;
+      }
+    }
+  </style>
+  <body>
+    <header><h1>동혁이의 레이아웃</h1></header>
+    <main>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </main>
+
+    <footer><p>© 2025 김동혁</p></footer>
+  </body>
+</html>

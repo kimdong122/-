@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>방명록</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: sans-serif;
+        padding: 20px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      form {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 400px;
+        margin: auto;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 5px;
+        margin-top: 8px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+
+      button {
+        background-color: royalblue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: navy;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>방명록</h2>
+      <form>
+        <label for="name">이름:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="이름을 입력하세요"
+        /><br /><br />
+
+        <label for="message">메시지</label><br />
+        <textarea
+          name="message"
+          id="message"
+          rows="4"
+          cols="40"
+          placeholder="하고 싶은 말을 적어주세요"
+        ></textarea
+        ><br /><br />
+
+        <button type="submit" onclick="alert('작성이 완료되었습니다!')">
+          작성 완료
+        </button>
+      </form>
+    </section>
+  </body>
+</html>
